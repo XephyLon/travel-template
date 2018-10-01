@@ -15,7 +15,7 @@ let config = {
       }
     }
   }
-}
+};
 
 gulp.task('beginClean', () => {
   return del(['./app/temp/sprite', './app/assets/images/sprites']);
