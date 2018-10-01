@@ -1,5 +1,8 @@
 import stickyNavbar from './modules/sticky';
 import AOS from 'aos';
+import navburger from './modules/navburger';
+
+navburger();
 
 AOS.init({
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
