@@ -1,5 +1,7 @@
-const stickyNavbar = require('sticky');
+const Person = require('./modules/person');
 
-window.onscroll = () => {
-  stickyNavbar('.site-header');
-};
+let john = new Person("John Doe", "Blue");
+let Jane = new Person("John Smith", "Purple");
+
+john.greet();
+Jane.greet();
