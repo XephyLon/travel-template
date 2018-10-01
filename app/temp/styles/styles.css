@@ -1086,3 +1086,8 @@ a {
         font-weight: 300;
         padding: 12px 0;
     }
+
+.primary-nav--sticky {
+      position: fixed;
+      width: 100%;
+    }
