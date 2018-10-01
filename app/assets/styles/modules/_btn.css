@@ -4,9 +4,18 @@
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
+  transition: 300ms;
+
+  &:hover {
+    background-color: $mainOrange;
+  }
 
   &--orange {
     background-color: $mainOrange;
+
+    &:hover {
+      background-color: $mainBlue;
+    }
   }
 
   &--large {

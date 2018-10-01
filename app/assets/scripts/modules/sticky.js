@@ -1,10 +1,10 @@
-function stickyNavbar(element) {
+function stickyNavbar(element, addedElem) {
   let elem = document.querySelector(element);
   let offset = elem.offsetTop;
-  if (window.pageYOffset >= offset) {
-    elem.classlist.add('primary-nav--sticky');
+  if (window.pageYOffset >= offset + 1) {
+    elem.classList.add(addedElem);
   } else {
-    elem.classlist.remove('primary-nav--sticky');
+    elem.classList.remove(addedElem);
   }
 }
 

@@ -24,7 +24,11 @@
     }
 
     &--sticky {
-      position: fixed;
-      width: 100%;
+      @mixin atMedium {
+        background-color: rgba($mainBlue, .9);
+        position: fixed;
+        width: 100%;
+        transition: 300ms;
+      }
     }
 }
