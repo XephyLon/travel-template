@@ -23,3 +23,7 @@ window.onscroll = () => {
 };
 
 Modal();
+
+//TODO: ENTER PRODUCTION.
+//TODO: GET RID OF GULP.
+//TODO: MAYBE A CAROUSEL.
