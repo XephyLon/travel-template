@@ -1,4 +1,3 @@
-//TODO: REWRITE AS AN ES6 CLASS.
 
 class StickyNavbar {
   constructor(element, addedElem) {
@@ -16,15 +15,5 @@ class StickyNavbar {
     }
   }
 }
-
-// function StickyNavbar(element, addedElem) {
-//   let elem = document.querySelector(element);
-//   let offset = elem.offsetTop;
-//   if (window.pageYOffset >= offset + 1) {
-//     elem.classList.add(addedElem);
-//   } else {
-//     elem.classList.remove(addedElem);
-//   }
-// }
 
 export default StickyNavbar;

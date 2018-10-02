@@ -1,4 +1,3 @@
-  //TODO: REWRITE AS A CLASS
 
   class NavBurger {
     constructor() {
