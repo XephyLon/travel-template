@@ -6,5 +6,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./app/temp/scripts"),
     filename: "bundle.js"
+  },
+  module: {
+    loaders: [
+      {
+        loader: 'babel-loader',
+        test: /\.js$/,
+        exclude: /node_modules/
+      }
+    ]
   }
 };

@@ -9,7 +9,10 @@
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
     "autoprefixer": "^9.1.5",
+    "babel-loader": "^8.0.4",
     "browser-sync": "^2.24.7",
     "del": "^3.0.0",
     "flow-bin": "^0.81.0",
