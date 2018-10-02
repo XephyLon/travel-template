@@ -1,4 +1,4 @@
-import stickyNavbar from './modules/sticky';
+import StickyNavbar from './modules/sticky';
 import AOS from 'aos';
 import NavBurger from './modules/navburger';
 
@@ -14,6 +14,6 @@ AOS.init({
 
 
 window.onscroll = () => {
-  stickyNavbar('.site-header', 'primary-nav--sticky');
-  stickyNavbar('.site-header__logo', 'site-header__logo--sticky');
+  new StickyNavbar('.site-header', 'primary-nav--sticky');
+  new StickyNavbar('.site-header__logo', 'site-header__logo--sticky');
 };
