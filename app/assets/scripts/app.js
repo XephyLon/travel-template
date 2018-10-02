@@ -1,7 +1,10 @@
-import StickyNavbar from './modules/sticky';
+import SmoothScroll from 'smoothscroll-polyfill';
 import AOS from 'aos';
+import StickyNavbar from './modules/sticky';
 import NavBurger from './modules/navburger';
 import Modal from './modules/modal';
+
+SmoothScroll.polyfill();
 
 let burgerIcon = new NavBurger();
 
