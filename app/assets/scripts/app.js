@@ -1,7 +1,4 @@
-const Person = require('./modules/person');
+import $ from 'jquery'
+import MobileMenu from './modules/MobileMenu'
 
-let john = new Person("John Doe", "Blue");
-let Jane = new Person("John Smith", "Purple");
-
-john.greet();
-Jane.greet();
+let mobileMenu = new MobileMenu();
