@@ -1,8 +1,18 @@
-function navburger() {
-  let element = document.querySelector('.site-header__menu-icon');
-  element.addEventListener('click', () => {
-    element.classList.toggle('is-active');
-  });
-}
+  //TODO: REWRITE AS A CLASS
 
-module.exports = navburger;
+  class NavBurger {
+    constructor() {
+      this.icon = document.querySelector('.site-header__menu-icon')
+      this.content = document.querySelector('.site-header__menu-content')
+      this.events()
+    }
+
+    events() {
+      this.icon.addEventListener('click', this.toggleMenu.bind(this))
+    }
+
+    toggleMenu() {
+      this.icon.classList.toggle('is-active')
+      this.content.classList.toggle('site-header__menu-content--is-visible')
+    }
+  }

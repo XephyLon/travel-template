@@ -1838,13 +1838,19 @@ a {
   }
 
 .site-header__menu-content {
-        display: none;
+        opacity: 0;
+        z-index: -10;
     }
+
+.site-header__menu-content--is-visible {
+            opacity: 1;
+            z-index: 1;
+        }
 
 @media (min-width: 800px) {
 
 .site-header__menu-content {
-            display: block
+            opacity: 1
     }
   }
 
