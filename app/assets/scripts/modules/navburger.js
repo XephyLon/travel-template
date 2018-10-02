@@ -16,3 +16,5 @@
       this.content.classList.toggle('site-header__menu-content--is-visible')
     }
   }
+
+  export default NavBurger;

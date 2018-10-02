@@ -1,8 +1,8 @@
 import stickyNavbar from './modules/sticky';
 import AOS from 'aos';
-import navburger from './modules/navburger';
+import NavBurger from './modules/navburger';
 
-navburger();
+let burgerIcon = new NavBurger();
 
 AOS.init({
   disable: false,
