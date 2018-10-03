@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const debug = require('gulp-debug');
 const svgSprite = require('gulp-svg-sprite');
 const rename = require('gulp-rename');
 const del = require('del');
