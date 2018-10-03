@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const debug = require('gulp-debug');
 const svgSprite = require('gulp-svg-sprite');
 const rename = require('gulp-rename');
 const del = require('del');
@@ -15,7 +14,7 @@ let config = {
       }
     }
   }
-}
+};
 
 gulp.task('beginClean', () => {
   return del(['./app/temp/sprite', './app/assets/images/sprites']);
@@ -43,6 +42,6 @@ gulp.task('copySpriteCss', ['createSprite'], () => {
 
 gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCss'], () => {
   return del('./app/temp/sprite');
-})
+});
 
 gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCss', 'endClean']);

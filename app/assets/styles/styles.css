@@ -1,7 +1,9 @@
 @import "normalize.css";
+@import "aos/dist/aos.css";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global.css";
+@import "modules/_hamburgers";
 @import "modules/_large-hero";
 @import "modules/_site-footer.css";
 @import "modules/_btn";
@@ -16,3 +18,4 @@
 @import "modules/_sprite.css";
 @import "modules/_site-header.css";
 @import "modules/_primary-nav.css";
+@import "modules/_modal.css";

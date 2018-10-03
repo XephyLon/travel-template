@@ -1,0 +1,49 @@
+.modal {
+    position: fixed;
+    z-index: -10;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,.5);
+    transition: all .5s ease-out;
+
+    &__content {
+        background-color: #FFF;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid $mainOrange;
+        width: 50%;
+    }
+
+    &__close {
+        color: $mainBlue;
+        float: right;
+        font-size: 1.75rem;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: $mainOrange;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    &__form {
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid $mainBlue;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+    }
+
+}
