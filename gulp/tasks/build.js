@@ -6,12 +6,13 @@ const usemin = require("gulp-usemin");
 const htmlmin = require("gulp-htmlmin");
 const nano = require('gulp-cssnano');
 const browserSync = require("browser-sync").create();
+const uglify = require('gulp-uglify');
 
 gulp.task('previewDist', () => {
     browserSync.init({
         notify: false,
         server: {
-            baseDir: "app"
+            baseDir: "dist"
         }
     });
 });
@@ -51,6 +52,7 @@ gulp.task('usemin', ['styles', 'scripts'], () => {
                 return htmlmin({ collapseWhitespace: true });
             }]
         }))
-})
+        .pipe(gulp.dest('./dist'));
+});
 
-gulp.task('build');
+gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'useminTrigger']);

@@ -23,6 +23,6 @@ window.onscroll = () => {
 };
 
 Modal();
-// TODO: ADD REVISIONS.
-// TODO: COMPRESS AND BUNDLE.
+
+
 // TODO: DEPLOY.
