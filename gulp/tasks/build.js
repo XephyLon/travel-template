@@ -12,13 +12,13 @@ gulp.task('previewDist', () => {
     browserSync.init({
         notify: false,
         server: {
-            baseDir: "public"
+            baseDir: "docs"
         }
     });
 });
 
 gulp.task('deleteDistFolder', ['icons'], () => {
-    del('./public');
+    del('./docs');
 });
 
 gulp.task('optimizeImages', ['deleteDistFolder'], () => {
@@ -28,7 +28,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], () => {
             progressive: true,
             multipass: true
         })) 
-        .pipe(gulp.dest('./public/assets/images'));
+        .pipe(gulp.dest('./docs/assets/images'));
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], () => {
@@ -52,7 +52,7 @@ gulp.task('usemin', ['styles', 'scripts'], () => {
                 return htmlmin({ collapseWhitespace: true });
             }]
         }))
-        .pipe(gulp.dest('./public'));
+        .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'useminTrigger']);
